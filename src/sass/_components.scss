@@ -127,6 +127,9 @@ h3 {
   padding: 2rem;
   border-radius: 3rem;
   transition: $transition;
+  .name {
+    height: 6rem;
+  }
   img {
     margin-bottom: 2rem;
     transition: $transition;

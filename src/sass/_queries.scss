@@ -1,0 +1,54 @@
+// Smaller laptops 1200px
+@media (max-width: 76em) {
+  .hero {
+    h1 {
+      font-size: 10rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+    .buttons {
+      margin-bottom: 4rem;
+    }
+    .coffeo-decoration {
+      height: 4rem;
+      .text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .button-primary {
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+      padding: 1.5rem 2rem;
+    }
+  }
+
+  .button-secondary {
+    &:link,
+    &:visited {
+      font-size: 1.6rem;
+      padding: 1.5rem 2rem;
+    }
+  }
+  .recent-products {
+    .card-container {
+      @include grid-2-cols;
+      row-gap: 7rem;
+    }
+  }
+  footer {
+    .footer-grid {
+      @include grid-4-cols;
+      row-gap: 4rem;
+      .social-medias {
+        margin: 0;
+      }
+    }
+  }
+} ;
