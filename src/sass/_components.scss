@@ -74,7 +74,7 @@
   }
   &:hover,
   &:active {
-    background-color: lighten($color-text, 75%);
+    background-color: lighten($color-text, 70%);
     color: $color-text;
   }
 }
