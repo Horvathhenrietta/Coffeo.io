@@ -1,0 +1,160 @@
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+@mixin grid {
+  display: grid;
+}
+
+@mixin grid-2-cols {
+  @include grid;
+  grid-template-columns: 1fr 1fr;
+}
+@mixin grid-4-cols {
+  @include grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@mixin grid-3-cols {
+  @include grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@mixin btn {
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: 2rem 4rem;
+  border-radius: 50px;
+  transition: $transition;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-column-center {
+  @include flex-column;
+  align-items: center;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin section-background {
+  background: linear-gradient(
+    to bottom right,
+    lighten($color-primary, 65%),
+    lighten($color-primary, 57%)
+  );
+  border-radius: 3rem;
+  padding: 0 5rem;
+}
+.button-primary {
+  &:link,
+  &:visited {
+    @include btn;
+    color: white;
+    background: $color-text;
+  }
+  &:hover,
+  &:active {
+    background: lighten($color-text, 10%);
+  }
+}
+
+.button-secondary {
+  &:link,
+  &:visited {
+    @include btn;
+    border: $border;
+    color: $color-text-light;
+  }
+  &:hover,
+  &:active {
+    background-color: lighten($color-text, 75%);
+    color: $color-text;
+  }
+}
+.link {
+  &:link,
+  &:visited {
+    font-size: 2rem;
+    transition: $transition;
+  }
+  &:hover,
+  &:active {
+    color: lighten($color-text, 30%);
+  }
+}
+.button-btn {
+  @include btn;
+  background-color: $color-text;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  &:hover {
+    background: lighten($color-text, 10%);
+  }
+}
+.cta-form {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: $border;
+  width: 40rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+p {
+  font-size: 2rem;
+  line-height: $line-height-l;
+}
+h3 {
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+
+// CARDS
+
+.card-container {
+  justify-content: space-between;
+}
+.card {
+  border: $border;
+  padding: 2rem;
+  border-radius: 3rem;
+  transition: $transition;
+  img {
+    margin-bottom: 2rem;
+    transition: $transition;
+  }
+  &:hover {
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(34, 34, 34, 0.082);
+
+    border: transparent 2px solid;
+  }
+  .heart-button {
+    cursor: pointer;
+
+    &:hover {
+      .icon-tabler-heart {
+        stroke: lighten($color-text-light, 20%);
+      }
+    }
+  }
+  .icon-tabler-heart {
+    transition: $transition;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.card__action-container {
+  @include flex-align-center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}

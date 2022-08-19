@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" class="stylesheet" />
+
+    <title>Coffeo - Your online coffee shop</title>
+    <script defer tpye="module" src="src/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav container">
+        <a class="logo-cont" href="#">
+          <img src="src/img/logo-side.svg" alt="Logo" class="logo" />
+        </a>
+        <div class="header__link-container">
+          <a href="#" class="link">Products</a>
+          <a href="#" class="link">Special offers</a>
+          <a href="#" class="link">About us</a>
+          <a href="#" class="link">Join us</a>
+        </div>
+        <a href="#" class="button-primary">Log In / Sign Up</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__text-container">
+            <h1>Coffeo</h1>
+            <h2>An online coffee store</h2>
+            <p>
+              Straight to your doorstep. We don't roast our beans until we have
+              your order. Every order is roasted and shipped the same day.
+            </p>
+            <div class="hero__buttons">
+              <a href="#" class="button-primary">Explore our products &rarr;</a>
+              <a href="#" class="button-secondary">Log In / Sign Up</a>
+            </div>
+            <div class="hero__data">
+              <div class="hero__data-container">
+                <div class="hero__data__title">Our products</div>
+                <div class="hero__data__value">+1000</div>
+              </div>
+              <div class="hero__data-container">
+                <div class="hero__data__title">Total sales</div>
+                <div class="hero__data__value">+340k</div>
+              </div>
+              <div class="hero__data-container">
+                <div class="hero__data__title">5 star ratings</div>
+                <div class="hero__data__value">+10k</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__illustration-container">
+            <img
+              src="src/img/hero.png"
+              alt="A coffee splashing out from a takeaway cup"
+              class="hero__illustration"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="coffeo-decoration">
+        <p class="coffeo-decoration__text">Coffeo</p>
+        <p class="coffeo-decoration__text">Coffeo</p>
+        <p class="coffeo-decoration__text">Coffeo</p>
+        <p class="coffeo-decoration__text">Coffeo</p>
+        <p class="coffeo-decoration__text">Coffeo</p>
+      </div>
+    </section>
+    <section class="recent-products container">
+      <div class="recent-products__header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-history"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1"
+          stroke="#391f15"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <polyline points="12 8 12 12 14 14" />
+          <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+        </svg>
+        <h3>Explore our recent products</h3>
+        <p>
+          Our delectable drink options, including classic espresso choices,
+          house specialties, fruit smoothies and frozen treats.
+        </p>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="src/img/coffee-pouch-mockup.png" alt="Coffeo Product" />
+          <p class="type">Blend</p>
+          <p class="name">Spice iceland blend</p>
+          <p class="price">16€</p>
+          <div class="card__action-container">
+            <a href="#" class="link">Add to cart &rarr;</a>
+            <button class="heart-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="src/img/coffee-pouch-mockup.png" alt="Coffeo Product" />
+          <p class="type">Blend</p>
+          <p class="name">Hair blender</p>
+          <p class="price">12€</p>
+          <div class="card__action-container">
+            <a href="#" class="link">Add to cart &rarr;</a>
+            <button class="heart-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="src/img/coffee-pouch-mockup.png" alt="Coffeo Product" />
+          <p class="type">Blend</p>
+          <p class="name">Cold brew blend</p>
+          <p class="price">32€</p>
+          <div class="card__action-container">
+            <a href="#" class="link">Add to cart &rarr;</a>
+            <button class="heart-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="src/img/coffee-pouch-mockup.png" alt="Coffeo Product" />
+          <p class="type">Single origin</p>
+          <p class="name">Handuras El Puente</p>
+          <p class="price">89€</p>
+          <div class="card__action-container">
+            <a href="#" class="link">Add to cart &rarr;</a>
+            <button class="heart-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="beans-cta container">
+      <div class="text-cont">
+        <h3 class="title">Check out our <br />best coffee beans</h3>
+        <a href="#" class="button-primary">Explore our products &rarr;</a>
+      </div>
+      <img src="src/img/coffee-bean-fine.png" alt="Coffee beans in a bag" />
+    </section>
+    <section class="sales container">
+      <div class="title-cont">
+        <h3>Weekend <span>special offers</span></h3>
+        <p>
+          Check out our daily special products that you can get with 20% off!
+        </p>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="img-cont">
+            <img src="src/img/moka-pot.png" alt="Coffeo Product" />
+          </div>
+          <p class="type">moka pot</p>
+          <p class="name">Miele CMF6 Thermal Carafe</p>
+          <div class="prices-container">
+            <p class="price-original">34€</p>
+            <p class="price-sale">12€</p>
+          </div>
+          <div class="card__action-container">
+            <a href="#" class="link">Add to cart &rarr;</a>
+            <button class="heart-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img-cont">
+            <img src="src/img/coffee-pot.png" alt="Coffeo Product" />
+          </div>
+          <p class="type">coffee cup</p>
+          <p class="name">Ember cup</p>
+          <div class="prices-container">
+            <p class="price-original">9.66€</p>
+            <p class="price-sale">6.48€</p>
+          </div>
+          <div class="card__action-container">
+            <a href="#" class="link">Add to cart &rarr;</a>
+            <button class="heart-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img-cont">
+            <img src="src/img/french-press.png" alt="Coffeo Product" />
+          </div>
+          <p class="type">french press</p>
+          <p class="name">Espro P3 French Press</p>
+          <div class="prices-container">
+            <p class="price-original">6.88€</p>
+            <p class="price-sale">5.22€</p>
+          </div>
+          <div class="card__action-container">
+            <a href="#" class="link">Add to cart &rarr;</a>
+            <button class="heart-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us container">
+      <div class="img-container">
+        <img
+          class="about-img"
+          src="src/img/coffee-beans-on-white.png"
+          alt="Coffee beans"
+        />
+      </div>
+      <div class="text-cont">
+        <div class="title-cont">
+          <h3>We care about the <span>quality</span> of our products</h3>
+          <p>
+            Coffeo offers the latest coffee and coffee equipment with an
+            exclusive unique design. Our coffee is carefully selected based on
+            flavour, quality, freshness and price.
+          </p>
+        </div>
+
+        <div class="traits-grid">
+          <div class="trait">
+            <div class="icon-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-messages"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10"
+                />
+                <path
+                  d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2"
+                />
+              </svg>
+            </div>
+            <div class="trait-text">
+              <p class="title">Active community</p>
+              <p class="description">You can reach out whenever you want!</p>
+            </div>
+          </div>
+
+          <div class="trait">
+            <div class="icon-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-star"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                />
+              </svg>
+            </div>
+
+            <div class="trait-text">
+              <p class="title">Premium quality</p>
+              <p class="description">
+                A premium quality coffee is what our customers deserve
+              </p>
+            </div>
+          </div>
+
+          <div class="trait">
+            <div class="icon-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-award"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="9" r="6" />
+                <polyline
+                  points="9 14.2 9 21 12 19 15 21 15 14.2"
+                  transform="rotate(-30 12 9)"
+                />
+                <polyline
+                  points="9 14.2 9 21 12 19 15 21 15 14.2"
+                  transform="rotate(30 12 9)"
+                />
+              </svg>
+            </div>
+            <div class="trait-text">
+              <p class="title">The best material</p>
+              <p class="description">
+                Our product is made by premium materials
+              </p>
+            </div>
+          </div>
+
+          <div class="trait">
+            <div class="icon-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-3d-cube-sphere"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#391f15"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M6 17.6l-2 -1.1v-2.5" />
+                <path d="M4 10v-2.5l2 -1.1" />
+                <path d="M10 4.1l2 -1.1l2 1.1" />
+                <path d="M18 6.4l2 1.1v2.5" />
+                <path d="M20 14v2.5l-2 1.12" />
+                <path d="M14 19.9l-2 1.1l-2 -1.1" />
+                <line x1="12" y1="12" x2="14" y2="10.9" />
+                <line x1="18" y1="8.6" x2="20" y2="7.5" />
+                <line x1="12" y1="12" x2="12" y2="14.5" />
+                <line x1="12" y1="18.5" x2="12" y2="21" />
+                <path d="M12 12l-2 -1.12" />
+                <line x1="6" y1="8.6" x2="4" y2="7.5" />
+              </svg>
+            </div>
+            <div class="trait-text">
+              <p class="title">Best product design</p>
+              <p class="description">
+                We worked hard to make the best experience!
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="button-primary">Explore our products &rarr;</a>
+      </div>
+      <div class="testimonial">
+        <img src="src/img/woman-avatar.png" alt="Smilin woman" />
+        <div>
+          <p class="name">Brooklyn Simmons</p>
+          <p class="text">
+            The flavor is rich and smooth and I know that when I drink a cup of
+            Coffeo, it's going to be a great morning.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="join-cta container">
+      <div class="text-cont">
+        <h3 class="title">Join and get <span>25% off!</span></h3>
+        <p class="text">
+          Subscribe to our newsletter and get 25% discount code!
+        </p>
+        <form>
+          <input class="cta-form" type="email" placeholder="Email adress" />
+          <button class="button-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <img
+        src="src/img/capuccino-top.png"
+        alt="Capuccino"
+        class="absolute--1"
+      />
+      <img
+        src="src/img/coffee-beans-on-white-2.png"
+        alt="Coffee beans"
+        class="absolute--2"
+      />
+    </section>
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <p class="footer-title">Privacy</p>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Terms of Use</a>
+            <a href="#" class="footer-link">Privacy policy</a>
+            <a href="#" class="footer-link">Cookies</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-title">Services</p>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Shop</a>
+            <a href="#" class="footer-link">Order ahead</a>
+            <a href="#" class="footer-link">Menu</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-title">About Us</p>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Find location</a>
+            <a href="#" class="footer-link">About us</a>
+            <a href="#" class="footer-link">Our story</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-title">Information</p>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Plans & Pricing</a>
+            <a href="#" class="footer-link">Jobs</a>
+            <a href="#" class="footer-link">Sell your product</a>
+          </div>
+        </div>
+
+        <div class="social-medias">
+          <p class="footer-title">Social media</p>
+          <div class="social-links">
+            <a href="#" class="social-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-facebook"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                /></svg
+            ></a>
+            <a href="#" class="social-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-instagram"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg
+            ></a>
+            <a href="#" class="social-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-twitter"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                /></svg
+            ></a>
+            <a href="#" class="social-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-youtube"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="3" y="5" width="18" height="14" rx="4" />
+                <path d="M10 9l5 3l-5 3z" /></svg
+            ></a>
+
+            <a href="#" class="social-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-linkedin"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.2"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <line x1="8" y1="11" x2="8" y2="16" />
+                <line x1="8" y1="8" x2="8" y2="8.01" />
+                <line x1="12" y1="16" x2="12" y2="11" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright-text">
+          Copyright &copy; 2022 Henrietta Horvath, design by
+          <a
+            href="https://dribbble.com/shots/19051246-Coffeo-Coffee-Online-Shop-Landing-Page"
+            >Ali Abdi</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
