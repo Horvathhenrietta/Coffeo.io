@@ -22,6 +22,7 @@ body {
   color: $color-text;
   background-color: $background-color;
   position: relative;
+  overflow: hidden;
 }
 
 a:link,
