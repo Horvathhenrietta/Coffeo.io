@@ -1,5 +1,8 @@
 // Smaller laptops 1200px
 @media (max-width: 76em) {
+  h3 {
+    font-size: 3.6rem;
+  }
   .hero {
     h1 {
       font-size: 10rem;
@@ -51,4 +54,153 @@
       }
     }
   }
-} ;
+
+  .about-us {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+    .img-container {
+      grid-row: 2;
+    }
+    .about-img {
+      width: 30%;
+      /* transform: translateX(0); */
+    }
+    .testimonial {
+      width: 70%;
+
+      bottom: 20%;
+
+      .name {
+        font-size: 1.8rem;
+      }
+      .text {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .join-cta {
+    margin-top: 5rem;
+    .absolute--1 {
+      display: none;
+    }
+    .absolute--2 {
+      max-width: 30rem;
+      bottom: -30%;
+      right: -20%;
+    }
+  }
+}
+// BELOW 1008PX
+@media (max-width: 63em) {
+  .header {
+    #{&}__link-container {
+      display: none;
+    }
+  }
+  .hero {
+    .coffeo-decoration {
+      .text {
+        font-size: 1.2rem;
+        letter-spacing: 1rem;
+      }
+    }
+  }
+  .sales {
+    .card {
+      .name {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  footer {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+// BELOW 848PX
+@media (max-width: 53em) {
+  .hero {
+    #{&}__grid {
+      grid-template-columns: 1fr;
+    }
+    .illustration-container {
+      transform: translateY(-15rem);
+      position: relative;
+      &::before {
+        content: '';
+        width: 80%;
+        height: 100%;
+        background-color: #f1ecea;
+        position: absolute;
+        top: 3rem;
+        left: 70%;
+        z-index: -15;
+        border-radius: 7rem;
+      }
+    }
+    #{&}__illustration {
+      width: 40%;
+      z-index: 500;
+      transform: translateX(160%);
+    }
+    .coffeo-decoration {
+      margin-top: 0rem;
+      transform: rotate(-3deg) scale(1.1) translateY(-150%);
+    }
+  }
+  .recent-products {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .beans-cta {
+    grid-template-columns: 1fr;
+    padding: 5rem;
+    justify-items: center;
+    row-gap: 5rem;
+    h3 {
+      margin-bottom: 2rem;
+    }
+    img {
+      transform: scale(1);
+      grid-row: 1;
+      height: 25rem;
+      width: auto;
+    }
+  }
+  .sales {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+// BELOW 608PX
+@media (max-width: 38em) {
+  .hero {
+  }
+  .about-us {
+    .traits-grid {
+      grid-template-columns: 1fr;
+    }
+    .about-img {
+      width: 70%;
+    }
+    .testimonial {
+      width: 95%;
+    }
+  }
+  .join-cta {
+    input {
+      margin-bottom: 2rem;
+    }
+  }
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    .social-medias {
+      grid-row: 1;
+    }
+  }
+}
